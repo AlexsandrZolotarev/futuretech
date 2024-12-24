@@ -1,0 +1,23 @@
+@use "../helpers" as *;
+
+.soc1als {
+  &_link {
+   --size: #{rem(24)};
+   @include square(var(--size));
+   @include laptop {
+    --size: #{rem(20)};
+  }
+  }
+
+  &__list {
+    display: flex;
+    column-gap: rem(20);
+    @include laptop {
+      column-gap: rem(14);
+    }
+  }
+
+  &__item {
+    display: flex;
+  }
+}

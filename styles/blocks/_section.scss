@@ -1,0 +1,95 @@
+@use "../helpers" as *;
+
+.section {
+  &__header {
+    padding-block: fluid(120, 40);
+    background-color: var(--color-dark-10);
+  }
+
+  &__header-inner {
+  }
+  &__header-info {
+    display: grid;
+    align-items: center;
+    row-gap: rem(16);
+    @include laptop {
+      row-gap: rem(10);
+    }
+  }
+  &__subtitle {
+    justify-self: start;
+  }
+
+  &__title {
+  }
+  &__body {
+    border-block: var(--border);
+  }
+}
+.container {
+}
+
+.card {
+  /* .card__preview */
+
+  &__preview {
+  }
+
+  /* .card__preview-main */
+
+  &__preview-main {
+  }
+
+  /* .card__preview-icon */
+
+  &__preview-icon {
+  }
+
+  /* .card__preview-info */
+
+  &__preview-info {
+  }
+
+  /* .card__preview-title */
+
+  &__preview-title {
+  }
+
+  /* .card__preview-description */
+
+  &__preview-description {
+  }
+
+  /* .card__body */
+
+  &__body {
+  }
+
+  /* .card__grid */
+
+  &__grid {
+  }
+
+  /* .card__grid--2--cols */
+
+  &__grid--2--cols {
+  }
+
+  /* .card__cell */
+
+  &__cell {
+  }
+
+  /* .card__cell-title */
+
+  &__cell-title {
+  }
+
+  /* .card__cell-description */
+
+  &__cell-description {
+  }
+}
+
+.h5 {
+}

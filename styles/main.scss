@@ -1,0 +1,35 @@
+@use 'normalise';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+
+@use 'blocks/icon';
+@use 'blocks/burger-button';
+@use 'blocks/button';
+@use 'blocks/header';
+@use 'blocks/logo';
+@use 'blocks/badge';
+@use 'blocks/soc1als';
+@use 'blocks/footer';
+
+@use 'blocks/advantage-card';
+@use 'blocks/hero';
+@use 'blocks/metrics';
+@use 'blocks/resources-preview';
+@use 'blocks/team';
+
+@use 'blocks/tag';
+@use 'blocks/section';
+@use 'blocks/list';
+@use 'blocks/tile';
+@use 'blocks/card';
+
+
+// .header,
+// main > *:not(:last-child),
+// .footer
+// {
+//     display: none !important;
+// }
