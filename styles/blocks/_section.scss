@@ -1,95 +1,51 @@
-@use "../helpers" as *;
+@use '../helpers' as *;
 
 .section {
   &__header {
     padding-block: fluid(120, 40);
     background-color: var(--color-dark-10);
-  }
 
-  &__header-inner {
-  }
-  &__header-info {
-    display: grid;
-    align-items: center;
-    row-gap: rem(16);
-    @include laptop {
-      row-gap: rem(10);
+    &-inner {
+      &:has(.section__actions) {
+        display: grid;
+        align-items: center;
+        column-gap: 1rem;
+
+        @include mobile-above {
+          grid-template-columns: 1fr auto;
+        }
+
+        @include mobile {
+          row-gap: rem(30);
+        }
+      }
+    }
+
+    &-info {
+      display: grid;
+      align-items: start;
+      row-gap: rem(16);
+
+      @include laptop {
+        row-gap: rem(10);
+      }
     }
   }
+
   &__subtitle {
     justify-self: start;
   }
 
-  &__title {
-  }
   &__body {
     border-block: var(--border);
   }
-}
-.container {
-}
 
-.card {
-  /* .card__preview */
-
-  &__preview {
+  &__actions,
+  &__link {
+    width: 100%;
   }
 
-  /* .card__preview-main */
-
-  &__preview-main {
+  &__link {
+    max-width: rem(360);
   }
-
-  /* .card__preview-icon */
-
-  &__preview-icon {
-  }
-
-  /* .card__preview-info */
-
-  &__preview-info {
-  }
-
-  /* .card__preview-title */
-
-  &__preview-title {
-  }
-
-  /* .card__preview-description */
-
-  &__preview-description {
-  }
-
-  /* .card__body */
-
-  &__body {
-  }
-
-  /* .card__grid */
-
-  &__grid {
-  }
-
-  /* .card__grid--2--cols */
-
-  &__grid--2--cols {
-  }
-
-  /* .card__cell */
-
-  &__cell {
-  }
-
-  /* .card__cell-title */
-
-  &__cell-title {
-  }
-
-  /* .card__cell-description */
-
-  &__cell-description {
-  }
-}
-
-.h5 {
 }
