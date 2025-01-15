@@ -1,0 +1,45 @@
+@use '../helpers' as *;
+
+.person-card {
+    display: flex;
+    align-items: center;
+    column-gap: fluid(16,8);
+  
+    &__image {
+        width: rem(80);
+        border-radius: 50%;
+        background-color: var(--color-dark-15);
+        @include laptop
+        {
+            width: rem(60);
+        }
+    }
+
+    /* .person-card__body */
+
+    &__body {
+        display: grid;
+        @include laptop-above
+        {
+            row-gap: rem(2);
+        }
+    }
+
+    /* .person-card__name */
+
+    &__name {
+        font-size: rem(20);
+        font-weight: 600;
+        color: var(--color-light);
+        @include laptop
+        {
+            font-size: rem(18);
+        }
+    }
+
+    /* .person-card__department */
+
+    &__department {
+    }
+}
+
