@@ -1762,10 +1762,4 @@ button[aria-label]::before {
   padding-block: var(--itemPaddingY);
 }
 
-.header,
-main > *:not(:last-child),
-footer {
-  display: none !important;
-}
-
 /*# sourceMappingURL=main.css.map */

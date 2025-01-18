@@ -37,9 +37,9 @@
 @use 'blocks/rating-view';
 @use 'blocks/bordered-grid';
 
-.header,
-main > *:not(:last-child),
-footer
-{
-    display: none !important;
-}
+// .header,
+// main > *:not(:last-child),
+// footer
+// {
+//     display: none !important;
+// }
