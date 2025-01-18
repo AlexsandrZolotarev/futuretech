@@ -33,6 +33,10 @@
 
 @use 'blocks/download-info';
 
+@use 'blocks/review-card';
+@use 'blocks/rating-view';
+@use 'blocks/bordered-grid';
+
 .header,
 main > *:not(:last-child),
 footer
