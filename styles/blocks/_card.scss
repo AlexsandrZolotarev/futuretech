@@ -1,4 +1,4 @@
-@use '../helpers' as *;
+@use "../helpers" as *;
 
 .card {
   @include tablet-above {
@@ -68,6 +68,7 @@
 
   &__grid {
     display: grid;
+
     &--2-cols {
       grid-template-columns: repeat(2, 1fr);
       gap: fluid(30, 10);
@@ -129,8 +130,8 @@
       display: grid;
       grid-template-columns: 1fr auto;
       grid-template-areas:
-        'other link'
-        'other link';
+        "other link"
+        "other link";
       align-items: center;
       gap: fluid(14, 10) rem(20);
     }
