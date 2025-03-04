@@ -4,7 +4,6 @@ class Header {
     overlay: "[data-js-header-overlay]",
     burgerButton: "[data-js-header-burger-button]",
   };
-
   stateClasses = {
     isActive: "is-active",
     isLock: "is-lock",

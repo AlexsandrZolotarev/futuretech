@@ -1,0 +1,64 @@
+
+@use '../helpers' as *;
+
+.about {
+    padding-block: fluid(120,40);
+    background-color: var(--color-dark-10);
+    &__inner {
+        display: grid;
+        row-gap: fluid(100,40);
+    }
+
+    &__header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: fluid(80,20);
+    }
+    &__icon {
+    }
+
+    // .about__subtitle
+
+    &__subtitle {
+    }
+
+    // .about__title
+
+    &__title {
+    }
+
+    // .about__description
+
+    &__description {
+    }
+
+    // .about__list
+
+    &__list {
+    }
+
+    // .about__item
+
+    &__item {
+    }
+}
+.container {
+}
+.tag {
+}
+.about-card {
+}
+.tile {
+}
+.about-cars {
+
+    // .about-cars__title
+
+    &__title {
+    }
+
+    // .about-cars__description
+
+    &__description {
+    }
+}

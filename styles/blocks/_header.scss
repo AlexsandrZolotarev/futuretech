@@ -2,13 +2,13 @@
 
 .header {
   position: sticky;
-  background-color: var(--color-dark-10);
   z-index: 100;
   top: 0;
   animation: scroling-header;
   animation-fill-mode: both;
   animation-timeline: scroll();
   animation-range: rem(100) rem(100);
+  
   @keyframes scroling-header {
     to {
       box-shadow: 0 0 1rem 0 var(--color-dark-40);
@@ -27,7 +27,6 @@
   &__body {
     padding-block: rem(24);
     background-color: (--color-dark-10);
-
     @include mobile {
       padding-block: rem(20);
     }
@@ -77,10 +76,6 @@
     &-link {
       padding: rem(14) rem(24);
       color: var(--color-gray-50);
-
-      @include laptop {
-        padding: rem(10) rem(18);
-      }
       &.is-active {
         color: var(--color-light);
         background-color: var(--color-dark);
@@ -88,6 +83,9 @@
         border: var(--border);
         border-radius: rem(10);
         pointer-events: none;
+      }
+      @include laptop {
+        padding: rem(10) rem(18);
       }
     }
   }

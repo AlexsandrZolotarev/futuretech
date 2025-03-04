@@ -9,7 +9,6 @@ html {
 
 body {
   @include fluid-text(18, 14);
-
   display: flex;
   flex-direction: column;
   font-family: var(--font-family-base);
@@ -104,16 +103,3 @@ a {
   transition-duration: 0s !important;
 }
 
-a,
-button {
-  &[aria-label] {
-    position: relative;
-
-    &::before {
-      @include abs-center;
-      @include square(rem(44));
-
-      content: '';
-    }
-  }
-}

@@ -30,10 +30,11 @@
   }
   &__line {
     background-color: currentColor;
-    width: 100%;
+    width: rem(10);
     height: rem(2);
     border-radius: 1rem;
     transition-duration: var(--transition-duration);
+
     &:last-child {
       width: 55%;
       align-self: end;
