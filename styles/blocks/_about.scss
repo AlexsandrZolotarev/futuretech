@@ -1,64 +1,82 @@
-
-@use '../helpers' as *;
+@use "../helpers" as *;
 
 .about {
-    padding-block: fluid(120,40);
-    background-color: var(--color-dark-10);
-    &__inner {
-        display: grid;
-        row-gap: fluid(100,40);
+  padding-block: fluid(120, 40);
+  background-color: var(--color-dark-10);
+  &__inner {
+    display: grid;
+    row-gap: fluid(100, 40);
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+    'icon info'
+    'icon description';
+    align-items: center;
+    gap: rem(30) fluid(80, 20);
+    @include laptop{
+        row-gap: rem(20);
     }
-
-    &__header {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        column-gap: fluid(80,20);
+    @include mobile{
+        grid-template-areas: 
+        'icon subtitle'
+        'title title'
+        'description description';
+        row-gap: rem(4);
     }
-    &__icon {
+  }
+  &__info
+  {
+    display: grid;
+    row-gap: rem(16);
+    @include laptop{
+        row-gap: rem(10);
     }
-
-    // .about__subtitle
-
-    &__subtitle {
+    @include mobile{
+       display: contents;
     }
-
-    // .about__title
-
-    &__title {
+  }
+  &__icon {
+    grid-area: icon;
+    width: fluid(150, 60);
+   
+  }
+  &__subtitle {
+    justify-self: start;
+    @include mobile{
+        grid-area: subtitle;
     }
+  }
 
-    // .about__description
-
-    &__description {
+  &__title {
+    @include mobile{
+        margin-top: rem(20);
+        grid-area: title;
     }
-
-    // .about__list
-
-    &__list {
+  }
+  &__description {
+    @include mobile{
+        grid-area: description;
     }
-
-    // .about__item
-
+  }
+  &__list {
+    display: grid;
+    padding: rem(20);
+    border-radius: rem(12);
+    background-color: var(--color-dark);
+    gap: rem(20);
+    @include laptop{
+        gap: rem(10);
+        padding: rem(10);
+        gap: rem(10);
+        border-radius: rem(10);
+    }
+    @include mobile-above{
+        grid-template-columns: repeat(3, 1fr);
+    }
     &__item {
     }
-}
-.container {
-}
-.tag {
-}
-.about-card {
-}
-.tile {
-}
-.about-cars {
-
-    // .about-cars__title
-
-    &__title {
-    }
-
-    // .about-cars__description
-
-    &__description {
-    }
+  }
 }
